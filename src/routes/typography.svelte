@@ -2,10 +2,10 @@
   import Messagebox from "../components/Messagebox.svelte";
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
-  window.addEventListener("resize", function(event) {
-    let h1 = document.body.querySelector("h1");
-    let h1Size = getComputedStyle(h1).getPropertyValue("font-size");
-  });
+  // window.addEventListener("resize", function(event) {
+  //   let h1 = document.body.querySelector("h1");
+  //   let h1Size = getComputedStyle(h1).getPropertyValue("font-size");
+  // });
   // let h2 = document.body.querySelector("h2");
   // let h2Size = window.getComputedStyle(h2).getPropertyValue("font-size");
   // console.log("the generated content is: ", h1Size); // returns ' rocks!'
@@ -64,7 +64,7 @@
     </Text>
   </Messagebox>
   <div class="examples">
-    <Heading level="1">h1 has font-size of {h1Size}</Heading>
+    <!-- <Heading level="1">h1 has font-size of {h1Size}</Heading> -->
     <!-- <Heading level="2">h2 has font-size of {h2Size}</Heading> -->
     <!-- <Heading level="3">h3 has font-size of {h3Size}</Heading> -->
     <!-- <Heading level="4">h4 has font-size of {h4Size}</Heading> -->
