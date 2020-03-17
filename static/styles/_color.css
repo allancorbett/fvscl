@@ -1,0 +1,81 @@
+:root {
+  --color-body-h: 0;
+  --color-body-s: 0%;
+  --color-body-l: 20%;
+  --color-body-a: 1;
+
+  --color-body-text: hsla(
+    var(--color-body-h),
+    var(--color-body-s),
+    20%,
+    var(--color-body-a)
+  );
+  --color-body-background: hsla(
+    var(--color-body-h),
+    var(--color-body-s),
+    98%,
+    var(--color-body-a)
+  );
+
+  --color-input-border: hsla(
+    var(--color-body-h),
+    var(--color-body-s),
+    60%,
+    0.8
+  );
+  --color-input-background: hsla(
+    var(--color-body-h),
+    var(--color-body-s),
+    100%,
+    1
+  );
+  --color-input-border-active: hsla(
+    var(--color-body-h),
+    var(--color-body-s),
+    40%,
+    1
+  );
+
+  --color-negative-h: 2;
+  --color-negative-s: 50%;
+  --color-negative-l: 50%;
+  --color-negative-a: 1;
+
+  --color-negative: hsla(
+    var(--color-negative-h),
+    var(--color-negative-s),
+    var(--color-negative-l),
+    var(--color-negative-a)
+  );
+
+  --color-positive-h: 123;
+  --color-positive-s: 56%;
+  --color-positive-l: 44%;
+  --color-positive-a: 1;
+
+  --color-positive: hsla(
+    var(--color-positive-h),
+    var(--color-positive-s),
+    var(--color-positive-l),
+    var(--color-positive-a)
+  );
+
+  --color-info-text: hsl(180, 50%, 30%, 1);
+  --color-info-background: hsla(180, 50%, 70%, 0.1);
+  --color-info-border: hsl(180, 50%, 70%, 1);
+
+  --render-background: repeating-linear-gradient(
+    135deg,
+    hsla(var(--color-body-h), var(--color-body-s), 20%, 0.05) 0,
+    hsla(var(--color-body-h), var(--color-body-s), 20%, 0.05) var(--space--2),
+    hsla(var(--color-body-h), var(--color-body-s), 20%, 0.1) var(--space--2),
+    hsla(var(--color-body-h), var(--color-body-s), 20%, 0.1)
+      calc(var(--space--2) * 2)
+  );
+}
+
+:root,
+body {
+  color: var(--color-body-text);
+  background-color: var(--color-body-background);
+}
