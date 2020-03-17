@@ -1,0 +1,37 @@
+:root {
+  --line-height-base: 1.4;
+  --line-height-tight: 1.1;
+  --line-height-loose: 1.7;
+
+  --font-size-base: var(--step-0);
+  --font-size-xs: var(--step--2);
+  --font-size-sm: var(--step--1);
+  --font-size-lg: var(--step-1);
+  --font-size-xl: var(--step-2);
+
+  --font-weight-base: normal;
+  --font-weight-thin: thin;
+  --font-weight-bold: bold;
+}
+body {
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+h2 {
+  font-size: var(--step-4);
+}
+h3 {
+  font-size: var(--step-3);
+}
+h4 {
+  font-size: var(--step-2);
+}
+h5 {
+  font-size: var(--step-1);
+}
+h6 {
+  font-size: var(--step-0);
+}
