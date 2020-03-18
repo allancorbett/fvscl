@@ -78,7 +78,7 @@
       </p>
       <p>
         Available to play with on
-        <a href="https://github.com/allancorbett/svelte-fvscl/">Github</a>
+        <a href="https://github.com/allancorbett/fvscl/">Github</a>
       </p>
     </Text>
   </Grid>

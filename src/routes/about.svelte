@@ -31,7 +31,7 @@
       <p>
         Whilst it's more of a proof-of-concept than deployable, production ready
         app there is probably something useful to be gleaned by taking a look at
-        <a href="https://github.com/allancorbett/svelte-fvscl/">
+        <a href="https://github.com/allancorbett/fvscl/">
           the source code on Github.
         </a>
       </p>
