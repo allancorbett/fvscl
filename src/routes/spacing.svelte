@@ -1,6 +1,72 @@
 <script>
+  import { onMount } from "svelte";
+
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
+
+  let minus2CurrentWidth;
+  let minus1CurrentWidth;
+  let baseCurrentWidth;
+  let plus1CurrentWidth;
+  let plus2CurrentWidth;
+  let plus3CurrentWidth;
+  let plus4CurrentWidth;
+  let plus5CurrentWidth;
+
+  onMount(() => {
+    let minus2 = document.querySelector(".space--2");
+    let minus2Width = window.getComputedStyle(minus2);
+    minus2CurrentWidth = minus2Width.getPropertyValue("width");
+    let minus1 = document.querySelector(".space--1");
+    let minus1Width = window.getComputedStyle(minus1);
+    minus1CurrentWidth = minus1Width.getPropertyValue("width");
+    let base = document.querySelector(".space-0");
+    let baseWidth = window.getComputedStyle(base);
+    baseCurrentWidth = baseWidth.getPropertyValue("width");
+    let plus1 = document.querySelector(".space-1");
+    let plus1Width = window.getComputedStyle(plus1);
+    plus1CurrentWidth = plus1Width.getPropertyValue("width");
+    let plus2 = document.querySelector(".space-2");
+    let plus2Width = window.getComputedStyle(plus2);
+    plus2CurrentWidth = plus2Width.getPropertyValue("width");
+    let plus3 = document.querySelector(".space-3");
+    let plus3Width = window.getComputedStyle(plus3);
+    plus3CurrentWidth = plus3Width.getPropertyValue("width");
+    let plus4 = document.querySelector(".space-4");
+    let plus4Width = window.getComputedStyle(plus4);
+    plus4CurrentWidth = plus4Width.getPropertyValue("width");
+    let plus5 = document.querySelector(".space-5");
+    let plus5Width = window.getComputedStyle(plus5);
+    plus5CurrentWidth = plus5Width.getPropertyValue("width");
+
+    function resize() {
+      let minus2 = document.querySelector(".space--2");
+      let minus2Width = window.getComputedStyle(minus2);
+      minus2CurrentWidth = minus2Width.getPropertyValue("width");
+      let minus1 = document.querySelector(".space--1");
+      let minus1Width = window.getComputedStyle(minus1);
+      minus1CurrentWidth = minus1Width.getPropertyValue("width");
+      let base = document.querySelector(".space-0");
+      let baseWidth = window.getComputedStyle(base);
+      baseCurrentWidth = baseWidth.getPropertyValue("width");
+      let plus1 = document.querySelector(".space-1");
+      let plus1Width = window.getComputedStyle(plus1);
+      plus1CurrentWidth = plus1Width.getPropertyValue("width");
+      let plus2 = document.querySelector(".space-2");
+      let plus2Width = window.getComputedStyle(plus2);
+      plus2CurrentWidth = plus2Width.getPropertyValue("width");
+      let plus3 = document.querySelector(".space-3");
+      let plus3Width = window.getComputedStyle(plus3);
+      plus3CurrentWidth = plus3Width.getPropertyValue("width");
+      let plus4 = document.querySelector(".space-4");
+      let plus4Width = window.getComputedStyle(plus4);
+      plus4CurrentWidth = plus4Width.getPropertyValue("width");
+      let plus5 = document.querySelector(".space-5");
+      let plus5Width = window.getComputedStyle(plus5);
+      plus5CurrentWidth = plus5Width.getPropertyValue("width");
+    }
+    window.onresize = resize;
+  });
 </script>
 
 <style>
@@ -71,48 +137,63 @@
   </div>
   <Text marginBottom={false}>
     <code>space--2</code>
+    currently renders as
+    <strong>{minus2CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space--1" />
   </div>
   <Text marginBottom={false}>
     <code>space--1</code>
+    currently renders as
+    <strong>{minus1CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-0" />
   </div>
   <Text marginBottom={false}>
     <code>space-0</code>
-    used as the base size for padding, margins and gaps
+    used as the base size for padding, margins and gaps. Currently renders as
+    <strong>{baseCurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-1" />
   </div>
   <Text marginBottom={false}>
     <code>space-1</code>
+    currently renders as
+    <strong>{plus1CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-2" />
   </div>
   <Text marginBottom={false}>
     <code>space-2</code>
+    currently renders as
+    <strong>{plus2CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-3" />
   </div>
   <Text marginBottom={false}>
     <code>space-3</code>
+    currently renders as
+    <strong>{plus3CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-4" />
   </div>
   <Text marginBottom={false}>
     <code>space-4</code>
+    currently renders as
+    <strong>{plus4CurrentWidth}</strong>
   </Text>
   <div class="tile">
     <div class="space-5" />
   </div>
   <Text marginBottom={false}>
     <code>space-5</code>
+    currently renders as
+    <strong>{plus5CurrentWidth}</strong>
   </Text>
 </div>

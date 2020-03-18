@@ -1,8 +1,26 @@
 <script>
-  let clip = "example.mp4";
+  import { onMount } from "svelte";
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
   import Grid from "../components/Grid.svelte";
+
+  let h3CurrentSize;
+  let h3CurrentLineHeight;
+
+  onMount(() => {
+    let h3 = document.querySelector("h3");
+    let h3Size = window.getComputedStyle(h3);
+    h3CurrentSize = h3Size.getPropertyValue("font-size");
+    h3CurrentLineHeight = h3Size.getPropertyValue("line-height");
+
+    function resize() {
+      let h3 = document.querySelector("h3");
+      let h3Size = window.getComputedStyle(h3);
+      h3CurrentSize = h3Size.getPropertyValue("font-size");
+      h3CurrentLineHeight = h3Size.getPropertyValue("line-height");
+    }
+    window.onresize = resize;
+  });
 </script>
 
 <style>
@@ -21,6 +39,9 @@
     margin: 0;
     box-shadow: var(--shadow-0);
   }
+  .highlight {
+    color: var(--color-positive);
+  }
 </style>
 
 <svelte:head>
@@ -33,23 +54,32 @@
   <Heading level="2" marginBottom={false}>
     An experiment in Fluid Visual Scaling for a Component Library type thingy.
   </Heading>
-  <div class="render">
-    <video autoplay loop class="video" src="example.mp4" />
-  </div>
-  <Text>
-    <p>
-      Inspired by
-      <a href="https://utopia.fyi/">Utopia</a>
-    </p>
-    <p>
-      Built using
-      <code>css</code>
-      and
-      <a href="https://svelte.dev/">Svelte</a>
-    </p>
-    <p>
-      Available to play with on
-      <a href="https://github.com/allancorbett/svelte-fvscl/">Github</a>
-    </p>
-  </Text>
+  <Heading level="3" marginBottom={false}>
+    This text has a font-size of
+    <span class="highlight">{h3CurrentSize}</span>
+    and line-height of
+    <span class="highlight">{h3CurrentLineHeight}</span>
+    - resize your browser to see it fluidly scale.
+  </Heading>
+  <Grid loose cols="2">
+    <div class="render">
+      <video autoplay loop class="video" src="example.mp4" />
+    </div>
+    <Text>
+      <p>
+        Inspired by
+        <a href="https://utopia.fyi/">Utopia</a>
+      </p>
+      <p>
+        Built using
+        <code>css</code>
+        and
+        <a href="https://svelte.dev/">Svelte</a>
+      </p>
+      <p>
+        Available to play with on
+        <a href="https://github.com/allancorbett/svelte-fvscl/">Github</a>
+      </p>
+    </Text>
+  </Grid>
 </Grid>
