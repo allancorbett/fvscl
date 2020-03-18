@@ -3,6 +3,7 @@
 
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
+  import Highlight from "../components/Highlight.svelte";
 
   let minus2CurrentWidth;
   let minus1CurrentWidth;
@@ -138,7 +139,7 @@
   <Text marginBottom={false}>
     <code>space--2</code>
     currently renders as
-    <strong>{minus2CurrentWidth}</strong>
+    <Highlight>{minus2CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space--1" />
@@ -146,7 +147,7 @@
   <Text marginBottom={false}>
     <code>space--1</code>
     currently renders as
-    <strong>{minus1CurrentWidth}</strong>
+    <Highlight>{minus1CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-0" />
@@ -154,7 +155,7 @@
   <Text marginBottom={false}>
     <code>space-0</code>
     used as the base size for padding, margins and gaps. Currently renders as
-    <strong>{baseCurrentWidth}</strong>
+    <Highlight>{baseCurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-1" />
@@ -162,7 +163,7 @@
   <Text marginBottom={false}>
     <code>space-1</code>
     currently renders as
-    <strong>{plus1CurrentWidth}</strong>
+    <Highlight>{plus1CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-2" />
@@ -170,7 +171,7 @@
   <Text marginBottom={false}>
     <code>space-2</code>
     currently renders as
-    <strong>{plus2CurrentWidth}</strong>
+    <Highlight>{plus2CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-3" />
@@ -178,7 +179,7 @@
   <Text marginBottom={false}>
     <code>space-3</code>
     currently renders as
-    <strong>{plus3CurrentWidth}</strong>
+    <Highlight>{plus3CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-4" />
@@ -186,7 +187,7 @@
   <Text marginBottom={false}>
     <code>space-4</code>
     currently renders as
-    <strong>{plus4CurrentWidth}</strong>
+    <Highlight>{plus4CurrentWidth}</Highlight>
   </Text>
   <div class="tile">
     <div class="space-5" />
@@ -194,6 +195,6 @@
   <Text marginBottom={false}>
     <code>space-5</code>
     currently renders as
-    <strong>{plus5CurrentWidth}</strong>
+    <Highlight>{plus5CurrentWidth}</Highlight>
   </Text>
 </div>

@@ -23,7 +23,7 @@
       <p>FVSCL, a Fluid Visual Scaling Component Library.</p>
       <p>
         Using
-        <a href="https://utopia.fyi/">Utopia</a>
+        <a target="_blank" href="https://utopia.fyi/">Utopia</a>
         as a jumping off point I wanted to create a visually, responsive
         Component Library (though, really, I wouldn't suggest using any of the
         components in anger) to explain and demonstrate what could be possible.
@@ -31,7 +31,7 @@
       <p>
         Whilst it's more of a proof-of-concept than deployable, production ready
         app there is probably something useful to be gleaned by taking a look at
-        <a href="https://github.com/allancorbett/fvscl/">
+        <a target="_blank" href="https://github.com/allancorbett/fvscl/">
           the source code on Github.
         </a>
       </p>
@@ -56,13 +56,15 @@
       <p>
         By importing custom css properties in to the root level, they are then
         accesible to all child elements. The real magic is done via the
-        <a href="https://utopia.fyi/generator/">Utopia CSS Generator</a>
+        <a target="_blank" href="https://utopia.fyi/generator/">
+          Utopia CSS Generator
+        </a>
         which generates a file full of variables that can then be reused across
         a "component library" to keep things nice and consistent.
       </p>
       <p>
         I've used
-        <a href="https://svelte.dev/">Svelte</a>
+        <a target="_blank" href="https://svelte.dev/">Svelte</a>
         partly to play with it and partly because it's the current darling of
         developers around the world. It seems alright, but I could have done the
         same things in plain html and js has only been used to show the current
@@ -94,9 +96,9 @@
     <Text>
       <p>
         Allan Corbett, a designer who can code. Find me on
-        <a href="https://github.com/allancorbett">Github</a>
+        <a target="_blank" href="https://github.com/allancorbett">Github</a>
         or view more things that I've done at
-        <a href="http://superallan.com">superallan.com</a>
+        <a target="_blank" href="http://superallan.com">superallan.com</a>
         .
       </p>
     </Text>

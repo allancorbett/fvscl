@@ -4,10 +4,14 @@
 
 <style>
   nav {
+    position: sticky;
+    top: 0;
     background-color: var(--color-body-text);
     padding: 0 var(--space-0);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
+    z-index: 1;
+    border-bottom: var(--border-width-hefty) solid var(--color-body-background);
   }
 
   ul {
@@ -31,7 +35,6 @@
   [aria-current] {
     position: relative;
     display: inline-block;
-    /* font-weight: var(--font-weight-bold); */
   }
 
   [aria-current]::after {

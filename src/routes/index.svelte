@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Heading from "../components/Heading.svelte";
+  import Highlight from "../components/Highlight.svelte";
   import Text from "../components/Text.svelte";
   import Grid from "../components/Grid.svelte";
 
@@ -39,9 +40,6 @@
     margin: 0;
     box-shadow: var(--shadow-0);
   }
-  .highlight {
-    color: var(--color-positive);
-  }
 </style>
 
 <svelte:head>
@@ -56,9 +54,9 @@
   </Heading>
   <Heading level="3" marginBottom={false}>
     This text has a font-size of
-    <span class="highlight">{h3CurrentSize}</span>
+    <Highlight>{h3CurrentSize}</Highlight>
     and line-height of
-    <span class="highlight">{h3CurrentLineHeight}</span>
+    <Highlight>{h3CurrentLineHeight}</Highlight>
     - resize your browser to see it fluidly scale.
   </Heading>
   <Grid loose cols="2">
@@ -68,17 +66,19 @@
     <Text>
       <p>
         Inspired by
-        <a href="https://utopia.fyi/">Utopia</a>
+        <a target="_blank" href="https://utopia.fyi/">Utopia</a>
       </p>
       <p>
         Built using
         <code>css</code>
         and
-        <a href="https://svelte.dev/">Svelte</a>
+        <a target="_blank" href="https://svelte.dev/">Svelte</a>
       </p>
       <p>
         Available to play with on
-        <a href="https://github.com/allancorbett/fvscl/">Github</a>
+        <a target="_blank" href="https://github.com/allancorbett/fvscl/">
+          Github
+        </a>
       </p>
     </Text>
   </Grid>

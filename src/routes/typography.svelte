@@ -4,6 +4,7 @@
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
   import Grid from "../components/Grid.svelte";
+  import Highlight from "../components/Highlight.svelte";
 
   let h1CurrentSize;
   let h2CurrentSize;
@@ -99,12 +100,30 @@
     <Heading level="3" marginTop>Headings</Heading>
   </div>
   <div class="examples">
-    <Heading level="1">h1 currently has a font-size of {h1CurrentSize}</Heading>
-    <Heading level="2">h2 currently has a font-size of {h2CurrentSize}</Heading>
-    <Heading level="3">h3 currently has a font-size of {h3CurrentSize}</Heading>
-    <Heading level="4">h4 currently has a font-size of {h4CurrentSize}</Heading>
-    <Heading level="5">h5 currently has a font-size of {h5CurrentSize}</Heading>
-    <Heading level="6">h6 currently has a font-size of {h6CurrentSize}</Heading>
+    <Heading level="1">
+      h1 currently has a font-size of
+      <Highlight>{h1CurrentSize}</Highlight>
+    </Heading>
+    <Heading level="2">
+      h2 currently has a font-size of
+      <Highlight>{h2CurrentSize}</Highlight>
+    </Heading>
+    <Heading level="3">
+      h3 currently has a font-size of
+      <Highlight>{h3CurrentSize}</Highlight>
+    </Heading>
+    <Heading level="4">
+      h4 currently has a font-size of
+      <Highlight>{h4CurrentSize}</Highlight>
+    </Heading>
+    <Heading level="5">
+      h5 currently has a font-size of
+      <Highlight>{h5CurrentSize}</Highlight>
+    </Heading>
+    <Heading level="6">
+      h6 currently has a font-size of
+      <Highlight>{h6CurrentSize}</Highlight>
+    </Heading>
   </div>
   <!-- <Messagebox>
     <Text small>
@@ -136,7 +155,7 @@
     <Text>
       <p class="textBase">
         The font-size of body text is
-        <strong>{textBaseCurrentSize}.</strong>
+        <Highlight>{textBaseCurrentSize}.</Highlight>
       </p>
       <p>
         Excepteur mollit tempor occaecat commodo sit laborum esse nostrud magna
@@ -162,7 +181,7 @@
     <Text small>
       <p class="textSmall">
         The font-size of small text is
-        <strong>{textSmallCurrentSize}.</strong>
+        <Highlight>{textSmallCurrentSize}.</Highlight>
       </p>
       <p>
         Quis incididunt est occaecat mollit reprehenderit consectetur do sunt
@@ -191,7 +210,7 @@
     <Text tiny>
       <p class="textTiny">
         The font-size of tiny text is
-        <strong>{textTinyCurrentSize}.</strong>
+        <Highlight>{textTinyCurrentSize}.</Highlight>
       </p>
       <p>
         Culpa mollit laboris proident qui nisi elit eiusmod do eu voluptate ex

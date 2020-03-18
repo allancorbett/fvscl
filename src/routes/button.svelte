@@ -4,6 +4,7 @@
   import Button from "../components/Button.svelte";
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
+  import Highlight from "../components/Highlight.svelte";
 
   let baseH;
   let baseFS;
@@ -128,19 +129,19 @@
     <ul>
       <li>
         Current height:
-        <strong>{baseH}</strong>
+        <Highlight>{baseH}</Highlight>
       </li>
       <li>
         Current font-size:
-        <strong>{baseFS}</strong>
+        <Highlight>{baseFS}</Highlight>
       </li>
       <li>
         Current horizontal padding:
-        <strong>{basePL}</strong>
+        <Highlight>{basePL}</Highlight>
       </li>
       <li>
         Current vertical padding:
-        <strong>{basePT}</strong>
+        <Highlight>{basePT}</Highlight>
       </li>
     </ul>
   </Text>
@@ -164,19 +165,19 @@
     <ul>
       <li>
         Current height:
-        <strong>{xsH}</strong>
+        <Highlight>{xsH}</Highlight>
       </li>
       <li>
         Current font-size:
-        <strong>{xsFS}</strong>
+        <Highlight>{xsFS}</Highlight>
       </li>
       <li>
         Current horizontal padding:
-        <strong>{xsPL}</strong>
+        <Highlight>{xsPL}</Highlight>
       </li>
       <li>
         Current vertical padding:
-        <strong>{xsPT}</strong>
+        <Highlight>{xsPT}</Highlight>
       </li>
     </ul>
 
@@ -191,19 +192,19 @@
     <ul>
       <li>
         Current height:
-        <strong>{smH}</strong>
+        <Highlight>{smH}</Highlight>
       </li>
       <li>
         Current font-size:
-        <strong>{smFS}</strong>
+        <Highlight>{smFS}</Highlight>
       </li>
       <li>
         Current horizontal padding:
-        <strong>{smPL}</strong>
+        <Highlight>{smPL}</Highlight>
       </li>
       <li>
         Current vertical padding:
-        <strong>{smPT}</strong>
+        <Highlight>{smPT}</Highlight>
       </li>
     </ul>
   </Text>
@@ -217,19 +218,19 @@
     <ul>
       <li>
         Current height:
-        <strong>{lgH}</strong>
+        <Highlight>{lgH}</Highlight>
       </li>
       <li>
         Current font-size:
-        <strong>{lgFS}</strong>
+        <Highlight>{lgFS}</Highlight>
       </li>
       <li>
         Current horizontal padding:
-        <strong>{lgPL}</strong>
+        <Highlight>{lgPL}</Highlight>
       </li>
       <li>
         Current vertical padding:
-        <strong>{lgPT}</strong>
+        <Highlight>{lgPT}</Highlight>
       </li>
     </ul>
   </Text>
@@ -243,19 +244,19 @@
     <ul>
       <li>
         Current height:
-        <strong>{xlH}</strong>
+        <Highlight>{xlH}</Highlight>
       </li>
       <li>
         Current font-size:
-        <strong>{xlFS}</strong>
+        <Highlight>{xlFS}</Highlight>
       </li>
       <li>
         Current horizontal padding:
-        <strong>{xlPL}</strong>
+        <Highlight>{xlPL}</Highlight>
       </li>
       <li>
         Current vertical padding:
-        <strong>{xlPT}</strong>
+        <Highlight>{xlPT}</Highlight>
       </li>
     </ul>
   </Text>
