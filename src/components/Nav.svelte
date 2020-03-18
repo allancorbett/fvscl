@@ -84,8 +84,15 @@
       </a>
     </li>
     <li>
-      <a aria-current={segment === 'in-use' ? 'page' : undefined} href="in-use">
-        in-use
+      <a
+        aria-current={segment === 'examples' ? 'page' : undefined}
+        href="examples">
+        examples
+      </a>
+    </li>
+    <li>
+      <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
+        about
       </a>
     </li>
 

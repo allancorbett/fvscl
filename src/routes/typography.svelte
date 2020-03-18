@@ -14,7 +14,6 @@
   let textBaseCurrentSize;
   let textSmallCurrentSize;
   let textTinyCurrentSize;
-  let textTinyCurrentMarginBottom;
 
   onMount(() => {
     let h1 = document.querySelector("h1");
@@ -192,8 +191,7 @@
     <Text tiny>
       <p class="textTiny">
         The font-size of tiny text is
-        <strong>{textTinyCurrentSize}</strong>
-        and has a margin-bottom of {textTinyCurrentMarginBottom}.
+        <strong>{textTinyCurrentSize}.</strong>
       </p>
       <p>
         Culpa mollit laboris proident qui nisi elit eiusmod do eu voluptate ex

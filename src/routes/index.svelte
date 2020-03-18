@@ -63,7 +63,7 @@
   </Heading>
   <Grid loose cols="2">
     <div class="render">
-      <video autoplay loop class="video" src="example.mp4" />
+      <video controls autoplay loop class="video" src="example.mp4" />
     </div>
     <Text>
       <p>
