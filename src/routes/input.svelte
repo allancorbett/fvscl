@@ -31,9 +31,21 @@
   <div class="render">
     <Input />
   </div>
-  <Text>Base input with default values</Text>
+  <Text>Base input</Text>
   <div class="render">
-    <Input disabled />
+    <Input
+      label="Number of things"
+      type="number"
+      value="314"
+      help="We can only accept numbers in this field" />
+  </div>
+  <Text>Numbers and help text</Text>
+  <div class="render">
+    <Input label="Disabled" value="Sorry pal" disabled />
   </div>
   <Text>Base input disabled</Text>
+  <div class="render">
+    <Input textarea label="Please, write something interesting..." />
+  </div>
+  <Text>Textarea</Text>
 </div>

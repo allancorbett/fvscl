@@ -2,9 +2,7 @@
   form {
     display: flex;
     flex-direction: column;
-  }
-  form > :global(*) {
-    margin-bottom: var(--space-2);
+    gap: var(--space-1);
   }
   form > :global(*:last-child) {
     margin-bottom: 0;
