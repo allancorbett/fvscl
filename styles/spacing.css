@@ -1,0 +1,18 @@
+:root {
+  --border-width-base: calc(var(--step--2) / 6);
+  --border-width-chunky: calc(var(--step--2) / 3);
+  --border-width-hefty: var(--step--2);
+
+  --gap: var(--step-2);
+
+  --space--2: var(--step--2);
+  --space--1: var(--step--1);
+  --space-0: var(--step-0);
+  --space-1: var(--step-1);
+  --space-2: var(--step-2);
+  --space-3: var(--step-3);
+  --space-4: var(--step-4);
+  --space-5: var(--step-5);
+
+  --border-radius-0: var(--step--2);
+}

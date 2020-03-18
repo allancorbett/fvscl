@@ -1,0 +1,10 @@
+:root {
+  --shadow--2: 0 var(--space--2) var(--space--2)
+    hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.1);
+  --shadow--1: 0 var(--space--1) var(--space--1)
+    hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.15);
+  --shadow-0: 0 var(--space-0) var(--space-1)
+    hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.2);
+  --shadow-1: 0 var(--space-1) var(--space-2)
+    hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.3);
+}

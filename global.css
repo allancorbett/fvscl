@@ -1,8 +1,8 @@
-@import "styles/_scale.css";
-@import "styles/_typography.css";
-@import "styles/_color.css";
-@import "styles/_spacing.css";
-@import "styles/_shadow.css";
+@import "styles/scale.css";
+@import "styles/typography.css";
+@import "styles/color.css";
+@import "styles/spacing.css";
+@import "styles/shadow.css";
 
 body {
   color: var(--color-body-text);
