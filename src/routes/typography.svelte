@@ -2,23 +2,6 @@
   import Messagebox from "../components/Messagebox.svelte";
   import Heading from "../components/Heading.svelte";
   import Text from "../components/Text.svelte";
-  // window.addEventListener("resize", function(event) {
-  //   let h1 = document.body.querySelector("h1");
-  //   let h1Size = getComputedStyle(h1).getPropertyValue("font-size");
-  // });
-  // let h2 = document.body.querySelector("h2");
-  // let h2Size = window.getComputedStyle(h2).getPropertyValue("font-size");
-  // console.log("the generated content is: ", h1Size); // returns ' rocks!'
-  // let h2 = document.querySelector("h2");
-  // let h2Size = getComputedStyle(h2).getPropertyValue("font-size");
-  // let h3 = document.querySelector("h3");
-  // let h3Size = getComputedStyle(h3).getPropertyValue("font-size");
-  // let h4 = document.querySelector("h4");
-  // let h4Size = getComputedStyle(h4).getPropertyValue("font-size");
-  // let h5 = document.querySelector("h5");
-  // let h5Size = getComputedStyle(h5).getPropertyValue("font-size");
-  // let h6 = document.querySelector("h6");
-  // let h6Size = getComputedStyle(h6).getPropertyValue("font-size");
 </script>
 
 <style>
