@@ -2,6 +2,8 @@
 
 Fluid Visual Scaling Component Library
 
+[Visit the demo site](https://allancorbett.github.io/fvscl/)
+
 ## Getting started
 
 Get the code and start playing.
