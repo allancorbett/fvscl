@@ -1,4 +1,5 @@
 <script>
+  // import SlackMock from "../components/SlackMock.svelte";
   import Heading from "../components/Heading.svelte";
   import Messagebox from "../components/Messagebox.svelte";
   import Button from "../components/Button.svelte";
@@ -56,6 +57,7 @@
 </style>
 
 <div class="render">
+  <!-- <SlackMock /> -->
   <Card class="social">
     <img class="avatar" src="avatar.jpg" alt="" />
     <Input textarea label="What are you thinking?" />

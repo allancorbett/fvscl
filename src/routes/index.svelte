@@ -50,7 +50,8 @@
     <Heading marginTop marginBottom={false} level="1">FVSCL</Heading>
   </div>
   <Heading level="2" marginBottom={false}>
-    An experiment in Fluid Visual Scaling for a Component Library type thingy.
+    An experiment in Fluid Visual Scaling for a Component Library type thingy
+    using CSS Variables.
   </Heading>
   <Heading level="3" marginBottom={false}>
     This text has a font-size of

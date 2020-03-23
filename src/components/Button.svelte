@@ -12,6 +12,16 @@
 </script>
 
 <style>
+  :root {
+    --btn-base-outer: var(--shadow--2);
+    --btn-base-inner: 0 0 0 transparent inset;
+    --btn-hover-outer: 0 0 0 transparent;
+    --btn-hover-inner: 0 0 var(--border-width-base)
+      hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.3)
+      inset;
+    --btn-active-outer: 0 0 0 transparent;
+    --btn-active-inner: var(--shadow--2) inset;
+  }
   button {
     position: relative;
     font-size: var(--font-size-base);
@@ -28,7 +38,7 @@
     border-radius: var(--border-radius-0);
   }
   button::before {
-    transition: all 500ms;
+    transition: box-shadow 200ms;
     content: " ";
     position: absolute;
     top: 0;
@@ -36,16 +46,15 @@
     bottom: 0;
     left: 0;
     border-radius: var(--border-radius-0);
-    box-shadow: var(--shadow--2);
+    box-shadow: var(--btn-base-inner), var(--btn-base-outer);
+    mix-blend-mode: multiply;
   }
   button:hover::before,
   button:focus::before {
-    box-shadow: 0 0 var(--border-width-base)
-      hsla(var(--color-body-h), var(--color-body-s), var(--color-body-l), 0.3)
-      inset;
+    box-shadow: var(--btn-hover-inner), var(--btn-hover-outer);
   }
   button:active::before {
-    box-shadow: var(--shadow--2) inset;
+    box-shadow: var(--btn-active-inner), var(--btn-active-outer);
   }
   .primary {
     color: var(--color-body-background);
